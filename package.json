@@ -1,0 +1,39 @@
+{
+  "name": "ubi-bagels",
+  "description": "It's bagel time!",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src",
+    "notify": "node ./src/tasks/notify",
+    "test": "standard"
+  },
+  "author": {
+    "email": "gourde.david@gmail.com",
+    "name": "David Gourde",
+    "url": "http://www.google.com"
+  },
+  "bugs": {
+    "url": "http://www.google.com"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "botkit": "^0.0.7",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4",
+    "express-http-proxy": "^0.6.0",
+    "lodash": "^4.6.1",
+    "mongodb": "^3.0.2",
+    "nexmo": "^2.0.2",
+    "slack": "^6.1.0",
+    "ejs": "2.5.7"
+  },
+  "keywords": [
+    "slack",
+    "heroku"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "6.11.1"
+  }
+}

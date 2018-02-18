@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ubi-bagels</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+  <h1>Ubi-bagels</h1>
+  <img src="party.jpg" class="img-circle" alt="Ubi-bagels" width="350" height="350">
+  <h3>The ultimate bagels reminder!</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>How can it help you?</h3>
+  <p>Ubi-bagels is a web app that will remind you that free bagels are available. If you subscribe to its notifications, you will receive an SMS alert at 07:00 AM when free bagels are available (last friday of each month).</p>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>How to register?</h3>
+  <p>You can easily register by sending an SMS to <a href="sms://+<%= sender_number %>"><%= sender_number.replace(/(\d{1})(\d{3})(\d{3})(\d{4})/, '$2-$3-$4'); %></a> with your name as the message. You will receive a subscription confirmation. If you would like to stop receiving those alerts, simply text STOP to the same number. Sending another SMS will update your name. Notes: Only the first word of the SMS is kept as your name. Only works with Canadian numbers.</p>
+</div>
+
+</body>
+</html>
+

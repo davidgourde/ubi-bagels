@@ -1,0 +1,12 @@
+{
+  "name": "ubi-bagels",
+  "description": "Reminding us to get our free bagels",
+  "success_url": "/",
+  "env": {
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+    "NODE_ENV": "staging"
+  },
+  "image": "heroku/nodejs"
+}
